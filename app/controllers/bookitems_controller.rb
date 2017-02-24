@@ -1,5 +1,6 @@
 class BookitemsController < ApplicationController
   before_action :set_bookitem, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /bookitems
   # GET /bookitems.json
@@ -15,6 +16,7 @@ class BookitemsController < ApplicationController
   # GET /bookitems/new
   def new
     @bookitem = Bookitem.new
+    uploader = AvatarUploader.new
   end
 
   # GET /bookitems/1/edit
@@ -69,6 +71,6 @@ class BookitemsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def bookitem_params
-      params.require(:bookitem).permit(:title, :author, :description)
+      params.require(:bookitem).permit(:title, :author, :description, :user_id,:avatar)
     end
 end

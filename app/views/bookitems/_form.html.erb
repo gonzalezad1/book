@@ -16,6 +16,11 @@
     <%= f.text_field :title %>
   </div>
 
+    <div class="field">
+    <%= f.label :image %>
+    <%= f.file_field :avatar %>
+  </div>
+
   <div class="field">
     <%= f.label :author %>
     <%= f.text_field :author %>
@@ -25,6 +30,9 @@
     <%= f.label :description %>
     <%= f.text_area :description %>
   </div>
+
+  <%= f.hidden_field :user_id, :value => current_user.id %>
+
 
   <div class="actions">
     <%= f.submit %>
