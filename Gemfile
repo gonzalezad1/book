@@ -24,8 +24,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'carrierwave', '~> 1.0'
-gem 'adminlte-rails'
-gem 'adminlte2-rails'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -36,6 +35,7 @@ gem 'simplecov', :require => false, :group => :test
 # gem 'capistrano-rails', group: :development
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
+  gem 'factory_girl_rails'
 end
 
 group :development, :test do
