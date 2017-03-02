@@ -1,0 +1,27 @@
+LOG:  database system was shut down at 2017-02-23 15:31:59 ICT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  database "book_development" does not exist
+FATAL:  role "postgres" does not exist
+FATAL:  role "gumi-dang" does not exist
+ERROR:  column "email" of relation "models" already exists
+STATEMENT:  ALTER TABLE "models" ADD "email" character varying DEFAULT '' NOT NULL
+ERROR:  relation "models" does not exist
+STATEMENT:  ALTER TABLE "models" ADD "email" character varying DEFAULT '' NOT NULL
+ERROR:  database "book_development" is being accessed by other users
+DETAIL:  There are 2 other sessions using the database.
+STATEMENT:  DROP DATABASE IF EXISTS "book_development"
+ERROR:  database "book_development" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+STATEMENT:  DROP DATABASE IF EXISTS "book_development"
+ERROR:  database "book_development" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+STATEMENT:  DROP DATABASE IF EXISTS "book_development"
+ERROR:  database "book_development" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+STATEMENT:  DROP DATABASE IF EXISTS "book_development"
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down

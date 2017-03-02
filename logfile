@@ -1,0 +1,56 @@
+LOG:  database system was shut down at 2017-02-23 15:31:59 ICT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  database "book_development" does not exist
+FATAL:  role "postgres" does not exist
+FATAL:  role "gumi-dang" does not exist
+ERROR:  column "email" of relation "models" already exists
+STATEMENT:  ALTER TABLE "models" ADD "email" character varying DEFAULT '' NOT NULL
+ERROR:  relation "models" does not exist
+STATEMENT:  ALTER TABLE "models" ADD "email" character varying DEFAULT '' NOT NULL
+ERROR:  database "book_development" is being accessed by other users
+DETAIL:  There are 2 other sessions using the database.
+STATEMENT:  DROP DATABASE IF EXISTS "book_development"
+ERROR:  database "book_development" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+STATEMENT:  DROP DATABASE IF EXISTS "book_development"
+ERROR:  database "book_development" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+STATEMENT:  DROP DATABASE IF EXISTS "book_development"
+ERROR:  database "book_development" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+STATEMENT:  DROP DATABASE IF EXISTS "book_development"
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-02-24 18:09:02 ICT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-02-27 18:00:02 ICT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  cached plan must not change result type
+STATEMENT:  SELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-03-01 11:44:52 ICT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  autovacuum launcher started
+LOG:  database system is ready to accept connections
+LOG:  database system was interrupted; last known up at 2017-03-01 15:34:21 ICT
+LOG:  database system was not properly shut down; automatic recovery in progress
+LOG:  invalid record length at 0/1898ED0
+LOG:  redo is not required
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
