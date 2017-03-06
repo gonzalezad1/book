@@ -1,16 +1,17 @@
 class Bookitem < ApplicationRecord
 	belongs_to :user
 
-
- 	mount_uploader :avatar, AvatarUploader
  	validates :title, presence: true
  	validates :description, presence: true
  	validates :author, presence: true
- 	 #validates_format_of :icon,
-	  #:with    => %r{^balls/.+}i,
-  	  #:message => "must start with 'balls/' and have a filename"
+ 	validates :avatar, presence: true
+ 	#validates_extension_whitelist_of :avatar
+	#validates_format_of :avatar, :with => BookUploader.extension_whitelist
+	#validates_integrity_of :avatar
+	# validates_integrity_of :avatar
+	# validates_processing_of :avatar
+	mount_uploader :avatar, BookUploader
 
-	validates_format_of :avatar, :with => %r{\.(gif|jpe?g|png)\z}i,:message => "must have an image extension"
 
 
 
