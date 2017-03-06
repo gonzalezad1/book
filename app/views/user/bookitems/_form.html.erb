@@ -1,4 +1,4 @@
-<%= form_for(bookitem) do |f| %>
+<%= form_for(bookitem, url: user_bookitems_path(@bookitem)) do |f| %>
   <% if bookitem.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(bookitem.errors.count, "error") %> prohibited this bookitem from being saved:</h2>
